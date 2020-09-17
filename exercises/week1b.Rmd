@@ -8,12 +8,18 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+# First header
 
+Some **fancy** _description_ including [links](https://rmarkdown.rstudio.com/articles_intro.html).
 ```{r}
-library(ggplot2)
-library(scales)
 x = rnorm(100, mean = 1, sd = 0.25)
 hist(x)
+```
+
+
+# Second header
+```{r}
 logx = rlnorm(100, meanlog = 1, sdlog = 0.25)
 hist(logx)
 ```
+
