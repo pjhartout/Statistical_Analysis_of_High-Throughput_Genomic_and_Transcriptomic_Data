@@ -1,0 +1,19 @@
+---
+title: "Exercise 1b"
+author: "Philip Hartout"
+date: "9/17/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(ggplot2)
+library(scales)
+x = rnorm(100, mean = 1, sd = 0.25)
+hist(x)
+logx = rlnorm(100, meanlog = 1, sdlog = 0.25)
+hist(logx)
+```
